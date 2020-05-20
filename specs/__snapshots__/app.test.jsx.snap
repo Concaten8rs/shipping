@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> React App functional and correctly rendering 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="NonModal"
+  >
+    <h1>
+      PRODUCT SHIPPING COMPONENT
+    </h1>
+    <div
+      className="zip"
+    >
+      Deliver to 
+      94112
+    </div>
+    <button
+      className="showZip"
+      id="showZip"
+      onClick={[Function]}
+    >
+      Edit zip code
+    </button>
+    <Zipcode
+      closeZipcode={[Function]}
+      handleSubmit={[Function]}
+      showZip={false}
+    />
+    <button
+      className="showModal"
+      id="showModal"
+      onClick={[Function]}
+    >
+       Ship it 
+    </button>
+  </div>
+  <Modal
+    className="ModalOne"
+    closeModal={[Function]}
+    product={Object {}}
+    show={false}
+  />
+</div>
+`;

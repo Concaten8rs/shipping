@@ -1,0 +1,24 @@
+
+
+**Behaviour determines tests - code does NOT determine tests**
+
+**State planning comes before test planning**
+
+
+
+*CAROUSEL TDD*
+MAIN GOAL: Follow TDD to build carousel within modal
+  X identify a testable chunk of functionality
+    >renders Recoms
+    >should scroll on click
+      - arrow disappears at end of list
+  - write the test to test functionality^
+    >renders Recoms
+    >should scroll on click
+      - arrow disappears at end of list
+  - check that test fails
+  - implement functionality
+  - make sure it passes test
+
+
+  

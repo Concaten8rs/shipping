@@ -1,0 +1,298 @@
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+h1 {
+  position: center;
+}
+
+#app {
+  width: 400px;
+  height: 500px;
+}
+
+.App {
+  background-color: lightgrey;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-radius: 5px;
+  padding: 16px 12px
+}
+
+
+.modal {
+  width: 500px;
+  background: white;
+  border: 1px solid #ccc;
+  -webkit-transition: 1.1s ease-out;
+  transition: 1.1s ease-out;
+  box-shadow: -2rem 2rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+.modal.off {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-filter: blur(8px);
+          filter: blur(8px);
+  -webkit-transform: scale(0.33);
+          transform: scale(0.33);
+  box-shadow: 1rem 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal h2 {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0;
+}
+.modal .content {
+  padding: 1rem;
+}
+
+.modal .productImage {
+  max-width: 30%;
+  height: auto;
+}
+.modal .actions {
+  border-top: 1px solid #ccc;
+  background: #eee;
+  padding: 0.5rem 1rem;
+}
+.modal .actions button {
+  border: 0;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+
+.showModal {
+  display: row;
+  margin-left: 180px;
+  justify-content: flex-end;
+  border: 0;
+  width: 200px;
+  background: rgb(204,0,0);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.showModal:active {
+  background: rgb(204,0,0);
+  color: lightgray;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes showModal {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes showModal {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.showModal {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.showModal:before {
+  content: '';
+  position: absolute;
+  border: rgb(204,0,0) solid 1px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.showModal:hover:before,
+.showModal:focus:before,
+.showModal:active:before {
+  -webkit-animation-name: showModal;
+  animation-name: showModal;
+}
+
+
+.toggle-button {
+  display: inline-block;
+  width: 250px;
+  height: 40px;
+  border: 0;
+  background: red;
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.toggle-button:active {
+  background: darkred;
+  color: lightgray;
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@-webkit-keyframes toggle-button {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+@keyframes toggle-button {
+  100% {
+    top: -12px;
+    right: -12px;
+    bottom: -12px;
+    left: -12px;
+    opacity: 0;
+  }
+}
+.toggle-button {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+}
+.toggle-button:before {
+  content: '';
+  position: absolute;
+  border: red solid 1px;
+  border-radius: 5px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.toggle-button:hover:before,
+.toggle-button:focus:before,
+.toggle-button:active:before {
+  -webkit-animation-name: toggle-button;
+  animation-name: toggle-button;
+}
+
+.recomImage {
+  max-width: 200px;
+  width: 200px;
+}
+
+.singleProduct {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.recoms {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+.notAvailable {
+  color: darkorange
+}
+
+.sorry {
+  color: #555555
+
+
+}
+
+.zipSubmit {
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.showZip {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.useLocation {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px 10px 10px 10px
+}
+
+.zip {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.zipcode {
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+.zipClose {
+  font-size: 12px;
+}
+
+.zipForm {
+  padding: 10px 10px 10px 10px
+}
+
+.deliveryOptions {
+  padding: 10px 10px 10px 10px
+}
+
+.productAdded {
+
+}
