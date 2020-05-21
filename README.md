@@ -62,7 +62,7 @@ Shipping component
   * PATCH `/products/:id`
 
 **Path Parameters:**
-  * `id` restaurant id
+  * `id` product id
 
 **Success Status Code:** `204`
 
@@ -84,6 +84,6 @@ Shipping component
   * DELETE `/products/:id`
 
 **Path Parameters:**
-  * `id` restaurant id
+  * `id` product id
 
 **Success Status Code:** `204`
