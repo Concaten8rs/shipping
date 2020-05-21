@@ -32,7 +32,7 @@ Shipping component
           "image": "URL"
         }
       ],
-      "price": 7.50.
+      "price": 7.50,
       "zip": [95122, 31244, 51255, 51512, 12311],
       "image": "URL"
     }
