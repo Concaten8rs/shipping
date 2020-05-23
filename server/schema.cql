@@ -1,12 +1,11 @@
 DROP KEYSPACE IF EXISTS shipping;
 
-CREATE KEYSPACE shipping;
+CREATE KEYSPACE shipping WITH replication = {'class': 'SimpleStrategy', 'replication_factor' : 1};
 
 USE shipping;
 
 CREATE TABLE products (
   productId INT PRIMARY KEY,
-  recommendations ARRAY,
   price DOUBLE,
   image TEXT
 );
