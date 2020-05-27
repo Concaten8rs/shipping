@@ -19,22 +19,22 @@ Shipping component
 
 ```json
     {
-      "productId": 253,
+      "productId": "Number",
       "recommended": [
         {
-          "name": "Revlon Hairbrush",
-          "price": 3.99,
-          "image": "URL"
+          "name": "String",
+          "price": "Number",
+          "image": "String"
         },
         {
-          "name": "Ibuprofen 200mg",
-          "price": 4.89,
-          "image": "URL"
+          "name": "String",
+          "price": "Number",
+          "image": "String"
         }
       ],
-      "price": 7.50,
-      "zip": [95122, 31244, 51255, 51512, 12311],
-      "image": "URL"
+      "price": "Number",
+      "zip": ["Numbers"],
+      "image": "String"
     }
 ```
 
@@ -48,12 +48,12 @@ Shipping component
 
 ```json
     {
-      "productId": "number",
-      "productName": "string",
-      "recommended": ["array", "of", "ids"],
-      "price": "number",
-      "zip": ["array", "of", "zips"],
-      "image": "url"
+      "productId": "Number",
+      "productName": "String",
+      "recommended": ["Numbers"],
+      "price": "Number",
+      "zip": ["Numbers"],
+      "image": "String"
     }
 ```
 
@@ -70,12 +70,12 @@ Shipping component
 
 ```json
     {
-      "productId": "number",
-      "productName": "string",
-      "recommended": ["array", "of", "ids"],
-      "price": "number",
-      "zip": ["array", "of", "zips"],
-      "image": "url"
+      "productId": "Number",
+      "productName": "String",
+      "recommended": ["Numbers"],
+      "price": "Number",
+      "zip": ["Numbers"],
+      "image": "String"
     }
 ```
 
