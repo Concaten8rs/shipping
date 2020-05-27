@@ -6,6 +6,7 @@ USE shipping;
 
 CREATE TABLE products (
   productId INT PRIMARY KEY,
+  name TEXT,
   price DOUBLE,
   image TEXT
 );
@@ -13,9 +14,6 @@ CREATE TABLE products (
 CREATE TABLE recommendations (
   productId INT,
   recommendationId INT,
-  name TEXT,
-  price DOUBLE,
-  image TEXT,
   PRIMARY KEY (productId, recommendationId)
 );
 
@@ -24,3 +22,5 @@ CREATE TABLE zips (
   zip INT,
   PRIMARY KEY (productId, zip)
 );
+
+COPY products FROM '../../primaryrecords.csv' | STDIN;
